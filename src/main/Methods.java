@@ -1,6 +1,5 @@
 package main;
 
-import java.lang.Integer;
 import java.util.Scanner;
 
 public class Methods {
@@ -15,223 +14,6 @@ public class Methods {
 		
 		return input.nextDouble();
 	}
-	
-	public static int putTwoIntsTogether(int a, int b) {
-		String temp = "" + a + b;
-		
-		return Integer.parseInt(temp);
-	}
-	
-
-	public static double convertOz2Tsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 6;
-	}
-
-	public static double convertOz2Tbsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 2;
-	}
-
-	public static double convertOz2Qt(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 32;
-	}
-
-	public static double convertOz2Cup(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 8.115;
-	}
-
-	public static double convertOz2Gal(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 128;
-	}
-
-	public static double convertTsp2Oz(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 6;
-	}
-
-	public static double convertTsp2Tbsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 3;
-	}
-
-	public static double convertTsp2Cup(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 48.692;
-	}
-
-	public static double convertTsp2Qt(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 192;
-	}
-
-	public static double convertTsp2Gal(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 768;
-	}
-
-	public static double convertTbsp2Oz(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 2;
-	}
-
-	public static double convertTbsp2Tsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 3;
-	}
-
-	public static double convertTbsp2Cup(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 16.231;
-	}
-
-	public static double convertTbsp2Qt(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 64;
-	}
-
-	public static double convertTbsp2Gal(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 256;
-	}
-
-	public static double convertCup2Oz(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 8.115;
-	}
-	
-	public static double convertCup2Tbsp(double amount) {
-
-		return amount * 16.231;
-	}
-
-	public static double convertCup2Qt(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 3.943;
-	}
-
-	public static double convertCup2Gal(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 15.773;
-	}
-
-	public static double convertQt2Oz(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 32;
-	}
-
-	public static double convertQt2Tsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 192;
-	}
-
-	public static double convertQt2Tbsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 64;
-	}
-
-	public static double convertQt2Cup(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 3.943;
-	}
-
-	public static double convertQt2Gal(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 4;
-	}
-
-	public static double convertGal2Oz(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 128;
-	}
-
-	public static double convertGal2Tsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 768;
-	}
-
-	public static double convertGal2Tbsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 256;
-	}
-
-	public static double convertGal2Cup(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 15.773;
-	}
-
-	public static double convertGal2Qt(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 4;
-	}
-
-	public static double convertCup2Tsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 48.692;
-	}
-
-	public static double convertTsp2Pt(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 96;
-	}
-
-	public static double convertOz2Pt(double amount) {
-		// TODO Auto-generated method stub
-		return  amount / 16;
-	}
-
-	public static double convertTbsp2Pt(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 32;
-	}
-
-	public static double convertPt2Tsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 96;
-	}
-
-	public static double convertPt2Tbsp(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 32;
-	}
-
-	public static double convertPt2Oz(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 16;
-	}
-
-	public static double convertPt2Cup(double amount) {
-		// TODO Auto-generated method stub
-		return amount  * 1.927;
-	}
-
-	public static double convertPt2Qt(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 2;
-	}
-
-	public static double convertPT2Gal(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 8;
-	}
-
-	public static double convertCup2Pt(double amount) {
-		// TODO Auto-generated method stub
-		return amount / 1.972;
-	}
-
-	public static double convertQt2Pt(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 2;
-	}
-
-	public static double convertGal2Pt(double amount) {
-		// TODO Auto-generated method stub
-		return amount * 8;
-	}
 
 	public static int test(int a) {
 
@@ -239,5 +21,138 @@ public class Methods {
 			return a;
 		}
 		return -1;
+	}
+	
+	public static double convertTsp(double amount, int b) {
+		switch(b) {
+		case 2:
+			return amount / 3;
+		case 3:
+			return amount / 6;
+		case 4:
+			return amount / 48.692;
+		case 5:
+			return amount / 96;
+		case 6:
+			return amount / 192;
+		case 7:
+			return amount / 768;
+			default:
+				return -1;
+		}
+	}
+	
+	public static double convertTbsp(double amount, int b) {
+		switch(b) {
+		case 1:
+			return amount * 3;
+		case 3:
+			return amount / 2;
+		case 4:
+			return amount / 16.231;
+		case 5:
+			return amount / 32;
+		case 6:
+			return amount / 64;
+		case 7:
+			return amount / 256;
+			default:
+				return -1;
+		}
+	}
+	
+	public static double convertOz(double amount, int b) {
+		switch(b) {
+		case 2:
+			return amount * 2;
+		case 1:
+			return amount * 6;
+		case 4:
+			return amount / 8.115;
+		case 5:
+			return amount / 16;
+		case 6:
+			return amount / 32;
+		case 7:
+			return amount / 128;
+			default:
+				return -1;
+		}
+	}
+	
+	public static double convertCup(double amount, int b) {
+		switch(b) {
+		case 2:
+			return amount * 16.231;
+		case 3:
+			return amount * 8.115;
+		case 1:
+			return amount * 48.692;
+		case 5:
+			return amount / 1.972;
+		case 6:
+			return amount / 3.943;
+		case 7:
+			return amount / 15.773;
+			default:
+				return -1;
+		}
+	}
+	
+	public static double convertPt(double amount, int b) {
+		switch(b) {
+		case 2:
+			return amount * 32;
+		case 3:
+			return amount * 16;
+		case 4:
+			return amount * 1.927;
+		case 1:
+			return amount * 96;
+		case 6:
+			return amount / 2;
+		case 7:
+			return amount / 8;
+			default:
+				return -1;
+		}
+	}
+	
+	public static double convertQt(double amount, int b) {
+		switch(b) {
+		case 2:
+			return amount * 64;
+		case 3:
+			return amount * 32;
+		case 4:
+			return amount * 3.943;
+		case 5:
+			return amount * 2;
+		case 1:
+			return amount * 192;
+		case 7:
+			return amount / 4;
+			default:
+				return -1;
+		}
+	}
+	
+	public static double convertGal(double amount, int b) {
+		switch(b) {
+		case 2:
+			return amount * 256;
+		case 3:
+			return amount * 128;
+		case 4:
+			return amount * 15.773;
+		case 5:
+			return amount * 8;
+		case 6:
+			return amount * 4;
+		case 1:
+			return amount * 768;
+			default:
+				return -1;
+		}
 	}
 }
