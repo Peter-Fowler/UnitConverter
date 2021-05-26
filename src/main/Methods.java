@@ -6,7 +6,6 @@ public class Methods {
 
 	public static void inform(String thing1, String thing2, double amount1, double amount2) {
 		System.out.printf("There are %.2f %s in %.2f %s .%n", amount2, thing2, amount1, thing1);
-	//	System.out.printf("'%s %f0.2 %s %f10.0 %s %n' There are " + amount2 + " " + thing2 + " in " + amount1 + " " + thing1 + ".");
 	}
 	
 	public static double getInfo(Scanner input, String thing1, String thing2) {
@@ -16,7 +15,7 @@ public class Methods {
 		return input.nextDouble();
 	}
 
-	public static int test(int a) {
+	public static int inMenu(int a) {
 
 		if (a >= 1 && a <= 8) {
 			return a;
